@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>פסטוש</title>
+    </head>
+
+<style>
+       h1 {
+             color: white;
+             background-color: red;
+             width: fit-content;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             padding: 7px;
+             border-radius: 10px;
+             box-shadow: 5px 5px 5px lightgray;
+       }
+</style>
+
+
+    <body>
+
+        <h1> ...קצת על פסטה</h1>
+        <p>הפסטה היא מאכל איטלקי העשוי מקמח ,מים ולפעמים גם ביצים. פירוש השם פסטה באיטלקית הוא בצק 
+        .הצריכה הממוצעת לאדם בישראל נעמדת בערך בכ- 5ק"ג פסטה בשנה, נתון נמוך לעומת הצריכה הממוצעת לאדם באיטליה הנעמדת כ-29 ק"ג פסטה בשנה ו- 15 ק"ג בארצות הברית. 
+        .לפסטה יש כל מיני צורות כגון: ספגטי, ליגוויני, מקרוני, פפרדלה ועוד. וכל מיני רטבים כגון: שמנת, רוזה, עגבניות ועוד
+        </p>
+        <img src="https://d3o5sihylz93ps.cloudfront.net/wp-content/uploads/sites/5/2021/01/13043234/unnamed-scaled.jpg" style="height: 300px; width: auto;">
+
+        <h2> שאלון קצר בשביל למצוא את הקומבינציה המועדפת עליך</h2>
+        
+        <style>
+                h2 {
+                    color: white;
+                    background-color: lightblue;
+                    width: fit-content;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    padding: 7px;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 5px lightgray;
+                }
+        </style>
+        
+        
+        <p>?מהו סוג הפסטה האהוב עלייך</p>
+
+        <label for="pasta">בחר פסטה:</label>
+        <select name="pasta" id="pasta">
+          <option value="ספגטי">ספגטי</option>
+          <option value="ביסלי">ביסלי</option>
+          <option value="פפרדלה">פפרדלה</option>
+          <option value="אטריות">איטריות</option>
+          <option label="רביולי">רביולי</option>
+          <option label="טורטליני">טורטליני</option>
+        </select>
+        <br><br>
+    
+        <p>?באיזה רוטב</p>
+    
+        <label for="sauce">בחר רוטב:</label>
+        <select name="sauce" id="sauce">
+          <option value="רוזה">רוזה</option>
+          <option value="שמנת">שמנת</option>
+          <option value="פסטו">פסטו</option>
+          <option value="עגבניות">עגבניות</option>
+        </select>
+        <br><br>
+    
+        <button onclick="favPasta()">לחץ עליי</button>
+    
+        <script>
+          function favPasta() {
+            const pasta = document.getElementById('pasta').value;
+            const sauce = document.getElementById('sauce').value;
+            alert(`הקומבינציה האהובה עלייך היא: פסטה - ${pasta}, רוטב - ${sauce}`);
+          }
+        </script>
+
+    </body>
+
+
+
+
+
+
+</html>
